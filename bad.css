@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+  }
+.scroll {
+    background-image: url('https://i.giphy.com/xT0GqcCJJJH12hJvGM.webp');
+    font-family: "Permanent Marker", cursive;
+    font-weight: 8000;
+    font-style:oblique;
+    border: 1px solid black;
+    font-size: 30px;
+    margin-bottom: 0; 
+  }
+  
+  .imgs {
+    width: 150px; /* Adjust the width as needed */
+    height:100%; /* Maintain aspect ratio */
+    border: 6px solid rgb(0, 0, 0);
+  }
+  
+  .navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-image: url('https://i.giphy.com/xT0GqcCJJJH12hJvGM.webp');
+    background-position: -1%;
+    border: 6px solid black; 
+  }
+  
+  .navbar {
+    background: transparent !important;
+  }
+  .navbar-nav .nav-link {
+    text-align: center;
+    margin-right: 40px; 
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 10%; 
+    background-color: rgba(255, 255, 255, 0.2); /* Adjust the background color and opacity as needed */
+    backdrop-filter: blur(1px); /* Adjust the blur radius as needed */
+    transition: background-color 0.2s ease; /* Smooth transition effect */
+  }
+  
+  
+  
+  .navbar-nav .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the hover background color and opacity as needed */
+  }
+
+  
+.btn-outline-success {
+  margin-right: 80px;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 15%;
+  background-color: rgba(255, 255, 255, 0.1); /* Adjust the background color and opacity as needed */
+  backdrop-filter: blur(1px); /* Adjust the blur radius as needed */
+  transition: background-color 0.2s ease; /* Smooth transition effect */
+}
+
+.navbar-nav .nav-link:hover,
+.form-control:hover,
+.btn-outline-success:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Adjust the hover background color and opacity as needed */
+}
+  
+/* marquee */
+.lol{
+    border: 3px solid black;
+    justify-content:start ;
+    padding-top: 8%;
+   
+}
+marquee.lol h1 {
+    border: 1px solid black;
+
+  }
+marquee{
+    background-color: greenyellow;
+}
+   
+.roll{
+   
+ padding-top: 0.5%;
+    height: 10vh;
+   
+  
+}
+
+/* caption for corsuel */
+.img3{
+    margin-top: -1%;
+    border: 20px solid rgb(0, 0, 0);
+  }
+  
+    .quote-top-right {
+      position: absolute;
+      top: 400px;
+      right: 34px;
+      color: rgb(247, 0, 255);
+      font-weight: bold;
+      padding: 5px;
+      animation: pinkAnimation 5s linear infinite;
+      font-size: 20px;
+    }
+  
+    .quote-center {
+      position: absolute;
+      top: 27%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      font-weight: bold; 
+      padding: 5px;
+      animation: pinkAnimation 5s linear infinite;
+    }
+  
+  
+    .quote-left-middle-top {
+      position: absolute;
+      top: 400px;
+      left: 40px;
+      text-align: left;
+      color: white;
+      font-weight: bold; 
+      padding: 5px;
+      animation: pinkAnimation 5s linear infinite;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 40px;
+    }
+  
+    @keyframes pinkAnimation {
+      0% {
+        color: rgb(247, 0, 255);
+      }
+      50% {
+        color: rgb(255, 0, 212);
+      }
+      100% {
+        color: rgb(247, 0, 255);
+      }
+    }
+
+
+
+
+  @keyframes shine {
+    0% { text-shadow: 0 0 10px rgba(255, 255, 0, 0.8); }
+    100% { text-shadow: 0 0 20px rgb(0, 0, 0), 0 0 30px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6), 0 0 50px rgba(255, 255, 255, 0.4), 0 0 60px rgba(255, 255, 255, 0.2); }
+  }
+.bgimg{
+    background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2FwZTFhdHl3dnZqZnM0bXh0ZTM5emRtbjlhNXd6c2YxMWUyZDZsbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/mj4ruS6mHkdKEdmwc1/giphy.gif);
+    width: 100vw;
+    height: 160vh;
+    background-size: cover;
+    background-position:center;
+    object-fit: cover;
+    
+    border:10px solid rgb(255, 255, 0);
+  
+}
+h1{
+  text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #fbff00;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8); /* White shadow to create shine effect */
+    animation: shine 1s infinite linear alternate;
+}
+
+/* card images */
+ .col{
+    padding: 1%;
+    height: 350px;
+    
+ }
+.card { 
+    margin-bottom: 10px; /* Added margin bottom for spacing */
+    width: 100%; 
+    box-shadow: 0 15px 25px rgba(129, 124, 124, 0.2); 
+    border-radius: 5px; 
+    backdrop-filter: blur(1px); 
+    background-color: rgba(0, 0, 0, 0.2); 
+    padding: 5px; 
+    text-align: center; 
+    border: 2px solid white;
+    max-width: 350px;
+} 
+  
+.card img { 
+    height: auto; /* Adjusted height for better display */
+    object-fit: cover; /* Ensures the image fills the container */
+    border: 2px solid rgb(255, 255, 255);
+    padding: 6%;
+}
+
+/* caption for corsuel */
+.img3{
+  margin-top: -1%;
+  border: 20px solid rgb(0, 0, 0);
+}
+
+  .quote-top-right {
+    position: absolute;
+    top: 400px;
+    right: 34px;
+    color: rgb(247, 0, 255);
+    font-weight: bold;
+    padding: 5px;
+    animation: pinkAnimation 5s linear infinite;
+    font-size: 20px;
+  }
+
+  .quote-center {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-weight: bold; 
+    padding: 5px;
+    animation: pinkAnimation 5s linear infinite;
+  }
+
+
+  .quote-left-middle-top {
+    position: absolute;
+    top: 400px;
+    left: 40px;
+    text-align: left;
+    color: white;
+    font-weight: bold; 
+    padding: 5px;
+    animation: pinkAnimation 5s linear infinite;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 40px;
+  }
+
+  @keyframes pinkAnimation {
+    0% {
+      color: rgb(247, 0, 255);
+    }
+    50% {
+      color: rgb(255, 0, 212);
+    }
+    100% {
+      color: rgb(247, 0, 255);
+    }
+  }
+  /* jjk */
+  .bgimg2{
+    background-image: url(https://rare-gallery.com/mocahbig/395310-satoru-gojo-jujutsu-kaisen-4k-pc-wallpaper.jpg);
+    width: 100vw;
+    height: 150vh;
+    background-size: cover;
+    background-position:center;
+    object-fit: cover;
+    border: 13px solid rgb(187, 0, 255);
+  }
+/* card3 */
+.card {
+  
+    border-radius: 15px;
+    transition: transform 1s;
+}
+.card:hover {
+    transform: translateY(-50px);
+}
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card-title {
+    color: #00ff44;
+    font-weight: bold;
+    text-shadow: #ffffff;
+    text-shadow: 3ch;
+}
+.card-text {
+    color: #ffffff;
+    font-size:larger
+}
+.price {
+    color: #ff0000; 
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.btn-primary {
+    background-color: #007bff; /* Blue color for button */
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue color on hover */
+}
+
+.hoddie{
+    background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExY3Y1MjUwOGVtdGpyejRhdjI5bHlxbXR6ZjBrMHg1bDlpZnJubTAxZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/osm7o1nCvv7pR7AyGO/giphy.gif);
+    width: 100vw;
+    height: 150vh;
+    background-size: cover;
+    background-position:center;
+    object-fit: cover;
+    border: 10px solid rgb(0, 204, 255);
+   
+}
+/* paymnet */
+.form-label {
+    color: #ffffff;
+}
+
+/* contact */
+@media (max-width: 600px) {
+    .text{
+        text-align: center;
+
+         }
+        }
+
+        .bgcontact{
+            background-image: url(https://images3.alphacoders.com/132/1322308.jpeg);
+            width: 100vw;
+    height: 130vh;
+    background-size: cover;
+    background-position:center;
+    object-fit: cover;
+        }
+        .textoy{
+            padding-top: 15%;
+        }
+
+
+        .formy{
+            font-size: 25px;
+            color: whitesmoke;
+            font-weight: bold;
+       }
+       .formy input[type="text"]{
+            border: none;
+            font-size: 18px;
+            margin-bottom: 2%;
+            box-shadow: 2px 3px 5px black;
+            border-radius: 25px;
+            padding: 2%;
+            width: 90%;
+            color: #7c0101;
+       }
+       .formy textarea{
+            border: none;
+            box-shadow: 2px 3px 5px black;
+            border-radius: 25px;
+            padding: o.8%;
+            width: 90%;
+       }
+       /* footer */
+       @keyframes backgroundFade {
+        0% { background-image: url(https://media1.giphy.com/media/3oD3YjsHijcSs3Sd5m/200.webp?cid=790b7611sn6hyoxhy4y7hji1246jne777mc7ybiy353iiv0s&ep=v1_gifs_search&rid=200.webp&ct=g);
+          background-size: cover;
+          background-position:center;
+          object-fit: cover;}
+        50% { background-color: #ff0000; 
+          background-image: url(https://media2.giphy.com/media/xT9DPELuNgRkEpzQWI/source.gif?cid=790b7611sn6hyoxhy4y7hji1246jne777mc7ybiy353iiv0s);
+          
+          width: 100vw;
+          background-size: cover;
+          background-position:center;
+        
+          object-fit: cover;
+        padding-top: 15%;}
+        100% { background-color: #03546c; }
+      }
+      .footer-col {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      .footer-link {
+        color: whitesmoke;
+        text-decoration: none;
+      }
+      .footer-link:hover {
+        text-decoration:wavy;
+      }
